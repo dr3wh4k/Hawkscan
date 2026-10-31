@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hawkscan"
+version = "1.0.0"
+description = "Lightweight multithreaded TCP port scanner with banner grabbing"
+readme = "README.md"
+requires-python = ">=3.9"
+license = { text = "MIT" }
+authors = [{ name = "Andreu Sánchez Ferre" }]
+keywords = ["security", "port-scanner", "networking", "cybersecurity", "pentesting"]
+
+[project.scripts]
+hawkscan = "hawkscan.cli:main"
+
+[tool.setuptools]
+packages = ["hawkscan"]
